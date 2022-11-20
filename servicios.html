@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/servicios.css">
+    <link rel="fonts" href="./fonts/Montserrat-Italic-VariableFont_wght.ttf">
+    <link rel="fonts" href="fonts/Montserrat-VariableFont_wght.ttf">
+    
+    <title>Servicios</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="menus">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Menú</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="contacto.html">Contacto</a>
+                    <a href="novedades.html">Novedades</a>
+                    <a href="index.html">Menú Principal</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="divart">
+            <h1>divart</h1>
+        </div>
+
+        <div class="buscador">
+            <img class="icon" src="./assets/icons/menu.png">
+        </div>
+    </header>
+
+    <section>
+        <img src="./assets/img/08.jpeg"
+    </section>
+
+    <section class="servicios">
+        <div>
+            <h3>Nuestros Servicios</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime similique animi delectus hic vitae quaerat officiis ipsum exercitationem, neque tempore eius illo, id architecto corporis commodi ad vel ipsa totam.</p>
+        </div>
+        <div>
+            <h3>Financiamiento</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, dolore amet ipsa consequuntur non beatae expedita inventore eligendi natus et incidunt fuga. Ab quia architecto temporibus esse provident corrupti non?</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__divart">
+            <h2>Divart</h2>
+        </div>
+        <div class="texto">
+            <br>
+            <p>2022 Divart &nbsp;&nbsp;<br>Hecho en México</p>
+        </div>
+        <div class="redes">
+            <h6>Siguenos en nuestras redes
+                <div>
+                    <img class="footer__img" src="./assets/icons/facebook.png">
+                    <img class="footer__img" src="./assets/icons/social.png">
+                    <img class="footer__img" src="./assets/icons/logotipo-de-instagram.png">
+                </div>
+            </h6>
+        </div>
+
+    </footer>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
